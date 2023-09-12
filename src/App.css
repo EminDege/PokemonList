@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(0, 0, 26);
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 200px;
+}
+
+.inputContainer {
+    display: flex;
+    width: 60%;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+input {
+    width: 200px;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 2px 5px 2px #333;
+    padding: 3px;
+}
+
+.numberInput {
+    width: 50px;
+}
+
+.pokemonList {
+    display: flex;
+}
+
+.listedElements {
+    width: 50%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh
+}
+
+ul li {
+    padding: 5px;
+    width: 120px;
+    font-size: 24px;
+
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.selected {
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+}
+
+.selectedPokemon {
+    text-align: center;
+    width: 50%;
+}
