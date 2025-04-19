@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { gql, useQuery } from '@apollo/client';
 import './App.css';
-//renk değiştirme denemesine başlıyorumadawd
+
+
 const GET_POKEMON_NAMES = gql`
   query GetPokemonNames($limit: Int) {
     pokemon_v2_pokemon(limit: $limit) {
@@ -88,6 +89,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>POKEMON LIST</h1>
       <div className='inputContainer'>
         <div className='displayNumber'>
           <h4>Number of Pokémon to display</h4>
@@ -116,10 +118,10 @@ function App() {
           </ul>
         </div>
         <div className='selectedPokemon'>
-          <h3> Selected Pokemon</h3>
+          <h3 style={{ marginBottom: '30px' }}> Selected Pokemon</h3>
           {selectedPokemonInfo ? (
             <div>
-              <p>Name: {selectedPokemonInfo.name}</p>
+              <p>Name: {selectedPokemonInfo.name.toUpperCase()}</p>
               <p>Height: {selectedPokemonInfo.height}</p>
               <p>Weight: {selectedPokemonInfo.weight}</p>
               <p>Base Experience: {selectedPokemonInfo.base_experience}</p>

@@ -7,7 +7,8 @@ body {
 .App {
     display: flex;
     flex-direction: column;
-    margin: 20px 200px;
+    text-align: center;
+    margin: 1% 12%;
 }
 
 .loading {
@@ -17,15 +18,15 @@ body {
 
 .inputContainer {
     display: flex;
-    width: 60%;
+    width: 50%;
     text-align: center;
     justify-content: space-between;
-    margin: 0 auto;
-    margin-bottom: 100px;
+    margin: 50px auto 100px auto;
+    align-items: end;
 }
 
 input {
-    width: 200px;
+    width: 60%;
     font-size: 24px;
     border-radius: 10px;
     text-align: center;
@@ -35,31 +36,45 @@ input {
     padding: 3px;
 }
 
+.displayNumber {
+    width: 50%;
+}
+
+.filter {
+    width: 50%;
+}
+
 .numberInput {
     width: 50px;
 }
 
 .pokemonList {
     display: flex;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .listedElements {
-    width: 50%;
+    width: 60%;
     text-align: center;
+}
+
+.selectedPokemon {
+    text-align: center;
+    width: 40%;
 }
 
 ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    height: 20vh
+    height: 20vh;
 }
 
 ul li {
     padding: 5px;
     width: 120px;
     font-size: 24px;
-
 }
 
 button {
@@ -72,7 +87,6 @@ button {
     padding: 3px 10px;
 }
 
-.selectedPokemon {
-    text-align: center;
-    width: 50%;
+p {
+    padding-bottom: 6px;
 }
